@@ -10471,3 +10471,91 @@ body {
   -webkit-columns: 2;
   padding-top: 15px !important;
 }
+
+.gray-header {
+  color: #888888 !important;
+}
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: black;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #368980;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 5px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+  text-align: justify;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #368980;
+  border: 2px solid #368980;
+}
+
+.resume .leftalign {
+  float:left;
+  position:relative;
+}
+
+.resume .rightalign {
+  float:right;
+  position:relative;
+}
+
+.resume .line {
+  color: #000000;
+   backgroundColor: #000000;
+   height: 1%;
+   borderColor : #000000;
+}
+
+.resume .skill-item {
+  border:1px solid gray;
+  text-align: justify;
+  padding: 1%;
+  margin: 2%;
+  line-height: 35px;
+
+}

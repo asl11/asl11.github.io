@@ -5,12 +5,15 @@ import Allskills from './components/Allskills'
 import ReactDOM from 'react-dom';
 import {Navbar, Nav, NavDropdown, Form, FormControl, Button, Image} from 'react-bootstrap/'
 import ScrollspyNav from "react-scrollspy-nav";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBook, faGraduationCap, faCode} from "@fortawesome/free-solid-svg-icons";
+
 
 
 function DisplayCourses({Courses}) {
   return (
     Courses && Courses.map((course,index) =>
-    <li style={{padding: 8}}>{course}</li>
+    <span className="skill-item">{course}</span>
     )
   );
 }
@@ -40,11 +43,15 @@ class App extends Component {
     [
       "Python", "Javascript", "Matlab", "Energia", "LateX"
     ];
+    const languages =
+    [
+      "Python", "Java", "C", "React", "Javascript", "HTML/CSS", "R", "Matlab", "Energia"
+    ];
     const courses =
     [
       "Advanced Algorithms", "Java Functional Programming", "Advanced Object-Oriented Programming and Design",
       "Web Development", "Tools and Models for Data Science", "Computer Systems in C", "Parallel Programming in Java",
-      "Computer Engineering", "Data Science Statistics", "Multivariable Calculus", "Linear Algebra"
+      "Computer Engineering", "Data Science Statistics", "Multivariable Calculus", "Linear Algebra",
     ]
 
   return (
@@ -103,12 +110,13 @@ class App extends Component {
 
       <div style={{textAlign:"left"}} class="row">
 
-      <div class="col-lg-6">
-        <h3 class="resume-title">Internships & Research</h3>
+      <div style={{marginRight:"5%"}} class="col-lg-7">
+        <h3 class="resume-title">Internships & Research<FontAwesomeIcon className="rightalign" icon={faBook} size='sm'/></h3>
+        <hr className="line" />
         <div class="resume-item">
           <h4>Research at Rice Neuroengineering Initiative</h4>
-          <h5>Feb 2020 - Present</h5>
-          <p><em>Rice University, Houston, TX</em></p>
+          <p><em><span>Rice University, Houston, TX</span>
+          <span className="rightalign">Feb 2020 - Present</span></em></p>
           <p>
           <ul>
             <li>Developed a Dense Neural Network model in python with the keras package and optimized the loss with regards to hyperparameter search using Bayesian Optimization</li>
@@ -118,32 +126,50 @@ class App extends Component {
           </ul>
           </p>
         </div>
+        <h3 class="resume-title">Education<FontAwesomeIcon icon={faGraduationCap} className="rightalign"/></h3>
+        <hr className="line"/>
         <div class="resume-item">
-          <h4>Education Outreach Intern</h4>
-          <h5>Sep 2017 - Jun 2018</h5>
-          <p><em>Teen Link - Crisis Clinic, Seattle, WA</em></p>
-          <p>
-          <ul>
-            <li>Managed volunteer connections and facilitated outreach programs amongst fifty plus volunteers</li>
-            <li>Initiated and Lead Projects such as Middle School Outreach and Website Redesign</li>
-            <li>Coordinated with managedment to communicate volunteer needs to board of directors</li>
-          </ul>
-          </p>
+          <h4>Bachelor of Arts in Computer Science</h4>
+          <p><em>Rice University, Houston, TX<span className="rightalign">2018-2022</span></em></p>
+          <p>Committed to BA in Computer Science, Minor in Data Science, 3.8 GPA</p>
         </div>
+
       </div>
-        <div class="col-lg-6">
-
-
-          <h3 class="resume-title">Education</h3>
+        <div class="col-lg-4">
+          <h3 className='resume-title'>Skills<FontAwesomeIcon icon={faCode} className="rightalign" size="s"/></h3>
+          <hr className="line"/>
           <div class="resume-item">
-            <h4>Bachelor of Arts in Computer Science</h4>
-            <h5>2018-2022</h5>
-            <p><em>Rice University, Houston, TX</em></p>
-            <p>Committed to BA in Computer Science, Minor in Data Science, 3.8 GPA</p>
+            <h4>Technologies</h4>
+            <p style={{textAlign:"justify"}}>
+              <span className="skill-item">Python</span>
+              <span className="skill-item">Java</span>
+              <span className="skill-item">C</span>
+              <span className="skill-item">Javascript</span>
+              <span className="skill-item">React</span>
+              <br/>
+              <span className="skill-item">HTML/CSS</span>
+              <span className="skill-item">R</span>
+              <span className="skill-item">Matlab</span>
+            </p>
           </div>
           <div class="resume-item">
-            <h5 style={{paddingTop:25}}>Relevant Courses</h5>
-            <ul className="twocol">
+            <h4>Tools</h4>
+            <p style={{textAlign:"justify"}}>
+              <span className="skill-item">Git</span>
+              <span className="skill-item">LaTeX</span>
+              <span className="skill-item">Keras</span>
+              <span className="skill-item">Hyperopt</span>
+              <br/>
+              <span className="skill-item">BayesOpt</span>
+            </p>
+          </div>
+
+
+
+        <h3>Relevant Courses</h3>
+          <hr className="line"/>
+          <div class="resume-item">
+            <ul>
               <DisplayCourses Courses={courses}></DisplayCourses>
             </ul>
           </div>
