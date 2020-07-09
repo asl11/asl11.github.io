@@ -6,15 +6,21 @@ import ReactDOM from 'react-dom';
 import {Navbar, Nav, NavDropdown, Form, FormControl, Button, Image} from 'react-bootstrap/'
 import ScrollspyNav from "react-scrollspy-nav";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBook, faGraduationCap, faCode} from "@fortawesome/free-solid-svg-icons";
+import { faMicroscope, faGraduationCap, faCode, faFileDownload, faBookOpen} from "@fortawesome/free-solid-svg-icons";
 
 
 
 function DisplayCourses({Courses}) {
   return (
     Courses && Courses.map((course,index) =>
-    <span className="skill-item">{course}</span>
+    course === "br" ? <br/> : <span className="skill-item">{course}</span>
     )
+  );
+}
+
+function DisplayCourseItem({CourseItem}) {
+  return (
+    CourseItem && <span className="skill-item">{CourseItem}</span>
   );
 }
 
@@ -49,10 +55,9 @@ class App extends Component {
     ];
     const courses =
     [
-      "Advanced Algorithms", "Java Functional Programming", "Advanced Object-Oriented Programming and Design",
-      "Web Development", "Tools and Models for Data Science", "Computer Systems in C", "Parallel Programming in Java",
-      "Computer Engineering", "Data Science Statistics", "Multivariable Calculus", "Linear Algebra",
-    ]
+      "Algorithms 1,2", "Computer Systems", "br", "Web Dev", "Data Science tools", "br", "Functional, Object-Oriented, Parallel",
+       "br", "Computer Engineering", "Statistics",
+     ];
 
   return (
 
@@ -91,7 +96,7 @@ class App extends Component {
                   {/*<Image style={{height:200, width:200, border:"4px solid #45433a"}}src={require("./assets/img/IMG-4454.jpg")} roundedCircle fluid />*/}
                   <h1 className="mx-auto my-0 text-uppercase">Alex Li</h1>
                   <h2 className="text-white-50 mx-auto mt-2 mb-5">Junior at Rice University pursuing a BA in CS</h2>
-                  <a style={{fontStyle : "italic", marginRight:10}} className="btn btn-primary js-scroll-trigger" href="#contact">Download my Resume</a>
+                  <a style={{fontStyle : "italic", marginRight:10}} className="btn btn-primary js-scroll-trigger" href="#contact">Download my Resume <FontAwesomeIcon size='xl' style={{marginLeft:10}}icon={faFileDownload}/></a>
                   <a className="btn btn-primary js-scroll-trigger" href="#contact">Github</a>
               </div>
           </div>
@@ -103,7 +108,7 @@ class App extends Component {
     <div class="container">
 
       <div style={{paddingTop:25}} class="section-title">
-        <h2>Resume</h2>
+        <h2 class="section-title">Resume</h2>
       </div>
       <p style={{paddingBottom : 35}}>My Objective is to utilize my skillset while learning and to implement new technologies in a meaningful way</p>
 
@@ -111,7 +116,7 @@ class App extends Component {
       <div style={{textAlign:"left"}} class="row">
 
       <div style={{marginRight:"5%"}} class="col-lg-7">
-        <h3 class="resume-title">Internships & Research<FontAwesomeIcon className="rightalign" icon={faBook} size='sm'/></h3>
+        <h3 class="resume-title">Internships & Research<FontAwesomeIcon className="rightalign" icon={faMicroscope} size='sm'/></h3>
         <hr className="line" />
         <div class="resume-item">
           <h4>Research at Rice Neuroengineering Initiative</h4>
@@ -164,42 +169,20 @@ class App extends Component {
             </p>
           </div>
 
-
-
-        <h3>Relevant Courses</h3>
+        <h3 class='resume-title'>Relevant Courses <FontAwesomeIcon size='s' className="rightalign" icon={faBookOpen}/></h3>
           <hr className="line"/>
-          <div class="resume-item">
-            <ul>
-              <DisplayCourses Courses={courses}></DisplayCourses>
-            </ul>
-          </div>
+          <p style={{textAlign:"justify"}}>
+            <DisplayCourses Courses={courses}/>
+          </p>
         </div>
       </div>
 
-    </div>
-  </section>
+      </div>
+    </section>
 
-
-        {/*  ------- SKILLS  ------- */}
-      <section className="skilltab" id="skills">
-        <div class="skills container" >
-        <div style={{padding: 75}} class="section-title">
-          <h2>Skills & Technologies</h2>
-        </div>
-        <div class="row skills-content">
-          <div class="col-lg-6">
-            <Allskills skillnames={skillnamesleft}></Allskills>
-          </div>
-          <div class="col-lg-6">
-            <Allskills skillnames = {skillnamesright}></Allskills>
-          </div>
-
-        </div>
-
-        </div>
-      </section>
 
       {/*-----------Projects----------------*/}
+      
       <Projects></Projects>
 
 

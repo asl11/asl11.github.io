@@ -10480,7 +10480,6 @@ body {
   font-size: 26px;
   font-weight: 500;
   margin-top: 20px;
-  color: black;
 }
 
 .resume .resume-item {
@@ -10557,5 +10556,10 @@ body {
   padding: 1%;
   margin: 2%;
   line-height: 35px;
+}
 
+.resume .section-title{
+  font-weight: bold !important;
+  font-family: "Alegreya Sans SC" !important;
+  letter-spacing: 2px !important;
 }
