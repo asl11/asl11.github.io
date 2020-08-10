@@ -88,7 +88,7 @@ class App extends Component {
 
       {/*  ------- FRONTPAGE  ------- */}
       <header className="masthead" id="about">
-          <span className="textbox">{"This Summer I worked on Bayesian Neural Decoding of behavioral videos using Deep Learning. This is a bitmasked data sample. Find out more "}<a href="#projects">here</a>.</span>
+          <span className="textbox">{"This Summer I worked on Bayesian Neural Decoding of behavioral videos using Deep Learning. This is a bitmasked data sample from an early project. Find out more "}<a href="#projects">here</a>.</span>
           <div  className="d-flex h-100 align-items-center">
               <div className="mx-right text-center wide">
                   {/*<Image style={{height:200, width:200, border:"4px solid #45433a"}}src={require("./assets/img/IMG-4454.jpg")} roundedCircle fluid />*/}
@@ -105,10 +105,10 @@ class App extends Component {
     <section style={{backgroundColor:"#BFD2D0"}} id="resume" class="resume">
     <div class="container">
 
-      <div style={{paddingTop:25}} class="section-title">
+      <div style={{paddingTop:75}} class="section-title">
         <h2 class="section-title">Resume</h2>
       </div>
-      <p style={{paddingBottom : 35}}>My Objective is to utilize my skillset while learning and to implement new technologies in a meaningful way</p>
+      <p style={{paddingBottom : 25}}>My Objective is to utilize my skillset while learning and to implement new technologies in a meaningful way</p>
 
 
       <div style={{textAlign:"left"}} class="row">
@@ -182,10 +182,10 @@ class App extends Component {
 
       {/*-----------Projects----------------*/}
       <Container className="imgwrap" fluid>
-      <div style={{paddingTop:75}} class="section-title">
+      <div style={{paddingTop:135}} class="section-title">
         <h2 style={{fontWeight:"bold"}} class="section-title">Projects</h2>
       </div>
-      <p style={{paddingBottom : 35}}>Here are some of my favorite projects! Hover over for more info as well as a link to their Github</p>
+      <p style={{paddingBottom : 75}}>Here are some of my favorite projects! Hover over for more info as well as a link to their Github</p>
 
         <Row>
           <Col className="gridCol" fluid>
@@ -220,18 +220,12 @@ class App extends Component {
     </section>
 
 
-      <section className="signup-section" id="signup">
-          <div className="container">
-              <div className="row">
-                  <div className="col-md-10 col-lg-8 mx-auto text-center">
-                      <i className="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                      <h2 className="text-white mb-5">Contact me at any of these platforms!</h2>
-                  </div>
-              </div>
-          </div>
-      </section>
 
-      <section id="contact" className="contact-section bg-black">
+
+      <section style={{backgroundColor:"#F4F7F0 !important"}} id="contact" className="contact-section">
+        <div style={{paddingTop:75, paddingBottom:75}} class="section-title">
+          <h2 style={{fontWeight:"bold"}} class="section-title">Contact Me</h2>
+        </div>
           <div className="container">
               <div className="row">
                   <div className="col-md-4 mb-3 mb-md-0">
@@ -240,7 +234,7 @@ class App extends Component {
                               <i className="fas fa-map-marked-alt text-primary mb-2"></i>
                               <h4 className="text-uppercase m-0">Address</h4>
                               <hr className="my-4" />
-                              <div className="small text-black-50">4923 Market Street, Orlando FL</div>
+                              <div className="small text-black-50">6350 Main Street Houston, TX 77005</div>
                           </div>
                       </div>
                   </div>
@@ -250,7 +244,7 @@ class App extends Component {
                               <i className="fas fa-envelope text-primary mb-2"></i>
                               <h4 className="text-uppercase m-0">Email</h4>
                               <hr className="my-4" />
-                              <div className="small text-black-50"><a href="#!">hello@yourdomain.com</a></div>
+                              <div className="small text-black-50"><a href="mailto:asl11@rice.edu">asl11@rice.edu</a></div>
                           </div>
                       </div>
                   </div>
@@ -260,20 +254,19 @@ class App extends Component {
                               <i className="fas fa-mobile-alt text-primary mb-2"></i>
                               <h4 className="text-uppercase m-0">Phone</h4>
                               <hr className="my-4" />
-                              <div className="small text-black-50">+1 (555) 902-8832</div>
+                              <div className="small text-black-50">+1 (425) 306-2285</div>
                           </div>
                       </div>
                   </div>
               </div>
               <div className="social d-flex justify-content-center">
-                  <a className="mx-2" href="#!"><i className="fab fa-twitter"></i></a>
-                  <a className="mx-2" href="#!"><i className="fab fa-facebook-f"></i></a>
-                  <a className="mx-2" href="#!"><i className="fab fa-github"></i></a>
+                  <a className="mx-2" href="#!"><i className="fab fa-linkedin fonticon fa-2x"></i></a>
+                  <a className="mx-2" href="#!"><i className="fab fa-github fonticon fa-2x"></i></a>
               </div>
           </div>
       </section>
 
-      <footer className="footer bg-black small text-center text-white-50"><div className="container">Made by Alex with React</div></footer>
+      <footer className="footer small text-center"><div className="container">Made by Alex with React</div></footer>
 
 
     </div>
