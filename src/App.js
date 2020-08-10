@@ -3,7 +3,7 @@ import './App.css';
 import Projects from './components/Projects'
 import Allskills from './components/Allskills'
 import ReactDOM from 'react-dom';
-import {Navbar, Nav, NavDropdown, Form, FormControl, Button, Image} from 'react-bootstrap/'
+import {Navbar, Nav, NavDropdown, Form, FormControl, Button, Image, Container, Row, Col} from 'react-bootstrap/'
 import ScrollspyNav from "react-scrollspy-nav";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMicroscope, faGraduationCap, faCode, faFileDownload, faBookOpen} from "@fortawesome/free-solid-svg-icons";
@@ -67,7 +67,6 @@ class App extends Component {
     <ScrollspyNav
     scrollTargetIds={[
       "about",
-      "skills",
       "resume",
       "projects",
       "contact"
@@ -79,7 +78,6 @@ class App extends Component {
           <Nav className="mr-auto">
             <Nav.Link className="dummy" href="#about">About</Nav.Link>
             <Nav.Link href="#resume">Resume</Nav.Link>
-            <Nav.Link href="#skills">Skills</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
 
@@ -180,10 +178,46 @@ class App extends Component {
       </div>
     </section>
 
+    <section style={{backgroundColor:"#F4F7F0"}} id="projects">
 
       {/*-----------Projects----------------*/}
-      
-      <Projects></Projects>
+      <Container className="imgwrap" fluid>
+      <div style={{paddingTop:75}} class="section-title">
+        <h2 style={{fontWeight:"bold"}} class="section-title">Projects</h2>
+      </div>
+      <p style={{paddingBottom : 35}}>Here are some of my favorite projects! Hover over for more info as well as a link to their Github</p>
+
+        <Row>
+          <Col className="gridCol" fluid>
+            <Image fluid className="imageresize" src={require("./assets/img/divorce.png")}/>
+            <p className="imgtext textcentered">2020 Rice Datathon Machine Learning Systems 1st place project:
+            Built a frontend and gui to interact with a PCA model that predicted indicators of divorce based on
+            survey results with up to 96% predictable variance. Link to project <a href="#!">page</a>.</p>
+          </Col>
+          <Col className="gridCol" fluid>
+            <Image fluid className="imageresize" src={require("./assets/img/mouse-gif.gif")}/>
+            <p className="imgtext textcentered">This summer I developed a Deep Neural Network that predicted mouse behavior based
+            binned neuron firing rate. The regression model was able to predict behavior state associated with videos such as this one
+            from the firing rate of the neurons. Visit the <a className="lightlink" href="#!">Github</a> or <a href="#!">Slideshare</a> for more info.</p>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col className="gridCol" fluid>
+            <Image fluid className="imageresize" src={require("./assets/img/proxy.png")}/>
+            <p className="imgtext textcentered">I've developed many C library related features from scratch, such as a shell, malloc, linking, and proxy in C.
+            Find their repositories <a href="#!" className="lightlink">here</a>.</p>
+          </Col>
+          <Col className="gridCol" fluid>
+            <Image fluid className="imageresize" src={require("./assets/img/prettypicture.png")}/>
+            <p className="imgtext textcentered">I also built a genetic algorithm in Java that uses json objects to represent
+            mathematical functions, and then nests them to generate a function relating x,y coordinates to rgb values. The result is a bunch of psuedo-randomly generated pictures
+            like this one, which can be further bred to create many generations of pictures. Look at the frontend <a href="#!" className="lightlink">
+            framework</a> or <a href="#!" className="lightlink">Github</a>.</p>
+          </Col>
+        </Row>
+      </Container>
+    </section>
 
 
       <section className="signup-section" id="signup">
@@ -191,11 +225,7 @@ class App extends Component {
               <div className="row">
                   <div className="col-md-10 col-lg-8 mx-auto text-center">
                       <i className="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                      <h2 className="text-white mb-5">Subscribe to receive updates!</h2>
-                      <form className="form-inline d-flex">
-                          <input className="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
-                          <button className="btn btn-primary mx-auto" type="submit">Subscribe</button>
-                      </form>
+                      <h2 className="text-white mb-5">Contact me at any of these platforms!</h2>
                   </div>
               </div>
           </div>
@@ -243,7 +273,7 @@ class App extends Component {
           </div>
       </section>
 
-      <footer className="footer bg-black small text-center text-white-50"><div className="container">Copyright © Your Website 2020</div></footer>
+      <footer className="footer bg-black small text-center text-white-50"><div className="container">Made by Alex with React</div></footer>
 
 
     </div>

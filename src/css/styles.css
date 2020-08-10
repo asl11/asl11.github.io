@@ -10327,7 +10327,7 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/contact.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10562,4 +10562,77 @@ body {
   font-weight: bold !important;
   font-family: "Alegreya Sans SC" !important;
   letter-spacing: 2px !important;
+}
+
+.gridCol{
+  padding-left:0 !important;
+  padding-right:0 !important;
+  margin-left:0 !important;
+  margin-right:0 !important;
+  overflow:hidden;
+  position: relative;
+	display: inline-block;
+	max-width: 100%;
+	height: auto;
+}
+
+.gridRow{
+  padding-top:0 !important;
+  padding-bottom:0 !important;
+  margin-top:0 !important;
+  margin-top:0 !important;
+}
+
+.imageresize{
+  height:100% !important;
+  width:100% !important;
+  transform:scale(1, 1);
+  transition: 0.3s ease-in-out;
+  max-width: 100%;
+  display: block;
+}
+
+.imgtext {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+  height:100%;
+  text-align:center;
+  padding-top:36%;
+
+}
+
+.textcentered {
+  padding-left:15%;
+  padding-right:15%;
+  padding-top:30%;
+}
+
+.gridCol:hover .imageresize{
+  transform:scale(1.2,1.2);
+  opacity:0.3;
+}
+
+.gridCol:hover .imgtext{
+  visibility: visible;
+  opacity:1;
+}
+
+.imgwrap {
+  overflow:hidden;
+}
+
+.lightlink {
+  color:pink;
+}
+
+.lightlink:hover {
+  color:cyan;
 }
