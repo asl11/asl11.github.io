@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/proto-web/static/css/main.76d94c77.chunk.css",
+    "main.js": "/proto-web/static/js/main.41334664.chunk.js",
+    "main.js.map": "/proto-web/static/js/main.41334664.chunk.js.map",
+    "runtime-main.js": "/proto-web/static/js/runtime-main.f357fb95.js",
+    "runtime-main.js.map": "/proto-web/static/js/runtime-main.f357fb95.js.map",
+    "static/js/2.d8171aa8.chunk.js": "/proto-web/static/js/2.d8171aa8.chunk.js",
+    "static/js/2.d8171aa8.chunk.js.map": "/proto-web/static/js/2.d8171aa8.chunk.js.map",
+    "index.html": "/proto-web/index.html",
+    "precache-manifest.ffdf32049f220fa7b5638c4b628a8d78.js": "/proto-web/precache-manifest.ffdf32049f220fa7b5638c4b628a8d78.js",
+    "service-worker.js": "/proto-web/service-worker.js",
+    "static/css/main.76d94c77.chunk.css.map": "/proto-web/static/css/main.76d94c77.chunk.css.map",
+    "static/js/2.d8171aa8.chunk.js.LICENSE.txt": "/proto-web/static/js/2.d8171aa8.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/proto-web/static/media/bg-brain.3f5e33a3.png",
+    "static/media/divorce.png": "/proto-web/static/media/divorce.6da82b11.png",
+    "static/media/mouse-gif.gif": "/proto-web/static/media/mouse-gif.4c8e8ba5.gif",
+    "static/media/prettypicture.png": "/proto-web/static/media/prettypicture.0121321a.png",
+    "static/media/proxy.png": "/proto-web/static/media/proxy.bb729480.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f357fb95.js",
+    "static/js/2.d8171aa8.chunk.js",
+    "static/css/main.76d94c77.chunk.css",
+    "static/js/main.41334664.chunk.js"
+  ]
+}
