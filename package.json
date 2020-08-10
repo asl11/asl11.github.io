@@ -2,7 +2,7 @@
   "name": "web-proto",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://asl11.github.io/web-proto",
+  "homepage": "https://asl11.github.io",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
@@ -26,7 +26,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
