@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/web-proto/static/css/main.35fa28f0.chunk.css",
-    "main.js": "/web-proto/static/js/main.175f5bbe.chunk.js",
-    "main.js.map": "/web-proto/static/js/main.175f5bbe.chunk.js.map",
-    "runtime-main.js": "/web-proto/static/js/runtime-main.68ad470e.js",
-    "runtime-main.js.map": "/web-proto/static/js/runtime-main.68ad470e.js.map",
-    "static/js/2.d8171aa8.chunk.js": "/web-proto/static/js/2.d8171aa8.chunk.js",
-    "static/js/2.d8171aa8.chunk.js.map": "/web-proto/static/js/2.d8171aa8.chunk.js.map",
-    "index.html": "/web-proto/index.html",
-    "precache-manifest.9258f1c7c8458a08fdf19fac358856c6.js": "/web-proto/precache-manifest.9258f1c7c8458a08fdf19fac358856c6.js",
-    "service-worker.js": "/web-proto/service-worker.js",
-    "static/css/main.35fa28f0.chunk.css.map": "/web-proto/static/css/main.35fa28f0.chunk.css.map",
-    "static/js/2.d8171aa8.chunk.js.LICENSE.txt": "/web-proto/static/js/2.d8171aa8.chunk.js.LICENSE.txt",
-    "static/media/styles.css": "/web-proto/static/media/bg-brain.3f5e33a3.png",
-    "static/media/divorce.png": "/web-proto/static/media/divorce.6da82b11.png",
-    "static/media/mouse-gif.gif": "/web-proto/static/media/mouse-gif.4c8e8ba5.gif",
-    "static/media/prettypicture.png": "/web-proto/static/media/prettypicture.0121321a.png",
-    "static/media/proxy.png": "/web-proto/static/media/proxy.bb729480.png"
+    "main.css": "/static/css/main.d5cd3503.chunk.css",
+    "main.js": "/static/js/main.f7a74de6.chunk.js",
+    "main.js.map": "/static/js/main.f7a74de6.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f7505c57.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f7505c57.js.map",
+    "static/js/2.d8171aa8.chunk.js": "/static/js/2.d8171aa8.chunk.js",
+    "static/js/2.d8171aa8.chunk.js.map": "/static/js/2.d8171aa8.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cf493328a2ff673f4ad35114282896c8.js": "/precache-manifest.cf493328a2ff673f4ad35114282896c8.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.d5cd3503.chunk.css.map": "/static/css/main.d5cd3503.chunk.css.map",
+    "static/js/2.d8171aa8.chunk.js.LICENSE.txt": "/static/js/2.d8171aa8.chunk.js.LICENSE.txt",
+    "static/media/styles.css": "/static/media/bg-brain.3f5e33a3.png",
+    "static/media/divorce.png": "/static/media/divorce.6da82b11.png",
+    "static/media/mouse-gif.gif": "/static/media/mouse-gif.4c8e8ba5.gif",
+    "static/media/prettypicture.png": "/static/media/prettypicture.0121321a.png",
+    "static/media/proxy.png": "/static/media/proxy.bb729480.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.68ad470e.js",
+    "static/js/runtime-main.f7505c57.js",
     "static/js/2.d8171aa8.chunk.js",
-    "static/css/main.35fa28f0.chunk.css",
-    "static/js/main.175f5bbe.chunk.js"
+    "static/css/main.d5cd3503.chunk.css",
+    "static/js/main.f7a74de6.chunk.js"
   ]
 }
