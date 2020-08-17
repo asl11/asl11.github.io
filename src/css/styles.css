@@ -10629,13 +10629,13 @@ body {
 }
 
 .lightlink {
-  color:pink;
+  color:#62CCC0;
 }
 
 .lightlink:hover {
-  color:cyan;
+  color:#8ed7ed;
 }
 
 .fonticon{
-  color:green;
+  color:#64a19d;
 }

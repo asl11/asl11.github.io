@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
-import Projects from './components/Projects'
-import Allskills from './components/Allskills'
-import ReactDOM from 'react-dom';
-import {Navbar, Nav, NavDropdown, Form, FormControl, Button, Image, Container, Row, Col} from 'react-bootstrap/'
+import {Navbar, Nav, Image, Container, Row, Col} from 'react-bootstrap/'
 import ScrollspyNav from "react-scrollspy-nav";
+import resume2020 from './assets/resume2020.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMicroscope, faGraduationCap, faCode, faFileDownload, faBookOpen} from "@fortawesome/free-solid-svg-icons";
 
@@ -15,12 +13,6 @@ function DisplayCourses({Courses}) {
     Courses && Courses.map((course,index) =>
     course === "br" ? <br/> : <span className="skill-item">{course}</span>
     )
-  );
-}
-
-function DisplayCourseItem({CourseItem}) {
-  return (
-    CourseItem && <span className="skill-item">{CourseItem}</span>
   );
 }
 
@@ -41,6 +33,7 @@ class App extends Component {
 
 
   render () {
+    {/* UNUSED VARIABLES
     const skillnamesleft =
     [
       "Java", "C", "React", "HTML/CSS", "R"
@@ -52,7 +45,7 @@ class App extends Component {
     const languages =
     [
       "Python", "Java", "C", "React", "Javascript", "HTML/CSS", "R", "Matlab", "Energia"
-    ];
+    ]; */}
     const courses =
     [
       "Algorithms 1,2", "Computer Systems", "br", "Web Dev", "Data Science tools", "br", "Functional, Object-Oriented, Parallel",
@@ -88,14 +81,14 @@ class App extends Component {
 
       {/*  ------- FRONTPAGE  ------- */}
       <header className="masthead" id="about">
-          <span className="textbox">{"This Summer I worked on Bayesian Neural Decoding of behavioral videos using Deep Learning. This is a bitmasked data sample from an early project. Find out more "}<a href="#projects">here</a>.</span>
+          <div className="textbox">{"This Summer I worked on Bayesian Neural Decoding of behavioral videos using Deep Learning. This is a bitmasked data sample from an early project. Find out more "}<a style={{scrollbehavior:"smooth"}}href="#projects">here</a>.</div>
           <div  className="d-flex h-100 align-items-center">
               <div className="mx-right text-center wide">
                   {/*<Image style={{height:200, width:200, border:"4px solid #45433a"}}src={require("./assets/img/IMG-4454.jpg")} roundedCircle fluid />*/}
                   <h1 className="mx-auto my-0 text-uppercase">Alex Li</h1>
                   <h2 className="text-white-50 mx-auto mt-2 mb-5">Junior at Rice University pursuing a BA in CS</h2>
-                  <a style={{fontStyle : "italic", marginRight:10}} className="btn btn-primary js-scroll-trigger" href="#contact">Download my Resume <FontAwesomeIcon size='xl' style={{marginLeft:10}}icon={faFileDownload}/></a>
-                  <a className="btn btn-primary js-scroll-trigger" href="#contact">Github</a>
+                  <a style={{fontStyle : "italic", marginRight:10}} className="btn btn-primary js-scroll-trigger" download='AlexResume' href={resume2020}>Download my Resume <FontAwesomeIcon size='xl' style={{marginLeft:10}}icon={faFileDownload}/></a>
+                  <a className="btn btn-primary js-scroll-trigger" href="https://github.com/asl11">Github</a>
               </div>
           </div>
       </header>
@@ -134,7 +127,7 @@ class App extends Component {
         <div class="resume-item">
           <h4>Bachelor of Arts in Computer Science</h4>
           <p><em>Rice University, Houston, TX<span className="rightalign">2018-2022</span></em></p>
-          <p>Committed to BA in Computer Science, Minor in Data Science, 3.8 GPA</p>
+          <p>Committed to BA in Computer Science, Minor in Data Science, 3.7 GPA</p>
         </div>
 
       </div>
@@ -192,13 +185,13 @@ class App extends Component {
             <Image fluid className="imageresize" src={require("./assets/img/divorce.png")}/>
             <p className="imgtext textcentered">2020 Rice Datathon Machine Learning Systems 1st place project:
             Built a frontend and gui to interact with a PCA model that predicted indicators of divorce based on
-            survey results with up to 96% predictable variance. Link to project <a href="#!">page</a>.</p>
+            survey results with up to 96% predictable variance. Link to project <a href="https://devpost.com/software/datathon-2020">page</a>.</p>
           </Col>
           <Col className="gridCol" fluid>
             <Image fluid className="imageresize" src={require("./assets/img/mouse-gif.gif")}/>
             <p className="imgtext textcentered">This summer I developed a Deep Neural Network that predicted mouse behavior based
             binned neuron firing rate. The regression model was able to predict behavior state associated with videos such as this one
-            from the firing rate of the neurons. Visit the <a className="lightlink" href="#!">Github</a> or <a href="#!">Slideshare</a> for more info.</p>
+            from the firing rate of the neurons. Visit the <a className="lightlink" href="#!">Github</a> or <a className="lightlink" href="#!">Slideshare</a> for more info.</p>
           </Col>
         </Row>
 
@@ -260,8 +253,8 @@ class App extends Component {
                   </div>
               </div>
               <div className="social d-flex justify-content-center">
-                  <a className="mx-2" href="#!"><i className="fab fa-linkedin fonticon fa-2x"></i></a>
-                  <a className="mx-2" href="#!"><i className="fab fa-github fonticon fa-2x"></i></a>
+                  <a className="mx-2" href="https://www.linkedin.com/in/alexander-li-s0129/"><i className="fab fa-linkedin fonticon fa-2x"></i></a>
+                  <a className="mx-2" href="https://github.com/asl11"><i className="fab fa-github fonticon fa-2x"></i></a>
               </div>
           </div>
       </section>
