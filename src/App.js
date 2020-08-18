@@ -81,8 +81,8 @@ class App extends Component {
 
       {/*  ------- FRONTPAGE  ------- */}
       <header className="masthead" id="about">
-          <div className="textbox">{"This Summer I worked on Bayesian Neural Decoding of behavioral videos using Deep Learning. This is a bitmasked data sample from an early project. Find out more "}<a style={{scrollbehavior:"smooth"}}href="#projects">here</a>.</div>
           <div  className="d-flex h-100 align-items-center">
+          <div className="textbox">{"This Summer I worked on Bayesian Neural Decoding of behavioral videos using Deep Learning. This is a bitmasked data sample from an early project. Find out more "}<a style={{scrollbehavior:"smooth"}}href="#projects">here</a>.</div>
               <div className="mx-right text-center wide">
                   {/*<Image style={{height:200, width:200, border:"4px solid #45433a"}}src={require("./assets/img/IMG-4454.jpg")} roundedCircle fluid />*/}
                   <h1 className="mx-auto my-0 text-uppercase">Alex Li</h1>
