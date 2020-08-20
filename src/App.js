@@ -116,7 +116,7 @@ class App extends Component {
           <p>
           <ul>
             <li>Developed a Dense Neural Network model in python with the keras package and optimized the loss with regards to hyperparameter search using Bayesian Optimization</li>
-            <li>Followed results of a behavenet paper to predict rat behavior based on neural images using Machine Learning</li>
+            <li>Followed results of a behavenet paper to predict mouse behavior based on neural images using Machine Learning</li>
             <li>Independently completed Machine Learning, Deep Learning, Neural Network courses and projects in Matlab such as Data preprocessing, linear regression models, PCA, etc</li>
             <li>Used Machine Learning Algorithms to identify motifs in Neural Images</li>
           </ul>
@@ -185,28 +185,31 @@ class App extends Component {
             <Image fluid className="imageresize" src={require("./assets/img/divorce.png")}/>
             <p className="imgtext textcentered">2020 Rice Datathon Machine Learning Systems 1st place project:
             Built a frontend and gui to interact with a PCA model that predicted indicators of divorce based on
-            survey results with up to 96% predictable variance. Link to project <a href="https://devpost.com/software/datathon-2020">page</a>.</p>
+            survey results with up to 96% predictable variance. Link to project <a className="lightlink" href="https://devpost.com/software/datathon-2020">page</a>.</p>
           </Col>
           <Col className="gridCol" fluid>
             <Image fluid className="imageresize" src={require("./assets/img/mouse-gif.gif")}/>
             <p className="imgtext textcentered">This summer I developed a Deep Neural Network that predicted mouse behavior based
             binned neuron firing rate. The regression model was able to predict behavior state associated with videos such as this one
-            from the firing rate of the neurons. Visit the <a className="lightlink" href="#!">Github</a> or <a className="lightlink" href="#!">Slideshare</a> for more info.</p>
+            from the firing rate of the neurons. Visit the <a className="lightlink" href="https://github.com/asl11/SummerResearchDNN">Github</a> or <a className="lightlink" href="#!">Slideshare</a> for more info.</p>
           </Col>
         </Row>
 
         <Row>
           <Col className="gridCol" fluid>
             <Image fluid className="imageresize" src={require("./assets/img/proxy.png")}/>
-            <p className="imgtext textcentered">I've developed many C library related features from scratch, such as a shell, malloc, linking, and proxy in C.
-            Find their repositories <a href="#!" className="lightlink">here</a>.</p>
+            <p className="imgtext textcentered">I've developed many C library related features from scratch, such as
+            a <a href="https://github.com/asl11/shell" className="lightlink">shell</a>
+            , <a href="https://github.com/asl11/malloc" className="lightlink">malloc</a>,
+            and <a href="https://github.com/asl11/proxy" className="lightlink">proxy</a> in C.
+            </p>
           </Col>
           <Col className="gridCol" fluid>
             <Image fluid className="imageresize" src={require("./assets/img/prettypicture.png")}/>
             <p className="imgtext textcentered">I also built a genetic algorithm in Java that uses json objects to represent
             mathematical functions, and then nests them to generate a function relating x,y coordinates to rgb values. The result is a bunch of psuedo-randomly generated pictures
-            like this one, which can be further bred to create many generations of pictures. Look at the frontend <a href="#!" className="lightlink">
-            framework</a> or <a href="#!" className="lightlink">Github</a>.</p>
+            like this one, which can be further bred to create many generations of pictures.
+            Find the repository <a href="https://github.com/asl11/GeneticPictureAlgorithm" className="lightlink">here</a>.</p>
           </Col>
         </Row>
       </Container>
